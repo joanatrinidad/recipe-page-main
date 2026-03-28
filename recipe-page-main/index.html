@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+    <title>Recipe Page</title>
+    <link rel="stylesheet" href="/assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <img src="/assets/images/image-omelette.jpeg" />
+      <h1 class="title"></h1>
+      <span class="subtitle"></span>
+
+      <div class="preparationTime">
+        <h2 class="prepTitle" style="color: violet"></h2>
+        <div>
+          <ul>
+            <li class="total"></li>
+            <li class="prep"></li>
+            <li class="cooking"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { recipe } from "./src/lang/text.js";
+      document.querySelector(".title").textContent = recipe.header.title;
+      document.querySelector(".subtitle").textContent = recipe.header.subtitle;
+      document.querySelector(".prepTitle").textContent =
+        recipe.preparation.title;
+      document.querySelector(".total").textContent = recipe.preparation.total;
+      document.querySelector(".prep").textContent = recipe.preparation.prep;
+      document.querySelector(".cooking").textContent = recipe.preparation.cook;
+    </script>
+  </body>
+</html>
