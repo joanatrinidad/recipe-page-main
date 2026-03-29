@@ -19,7 +19,7 @@
       <span class="subtitle"></span>
 
       <div class="preparationTime">
-        <h2 class="prepTitle" style="color: violet"></h2>
+        <h3 class="prepTitle" style="color: violet"></h3>
         <div>
           <ul>
             <li class="total"></li>
@@ -27,6 +27,19 @@
             <li class="cooking"></li>
           </ul>
         </div>
+      </div>
+
+      <h2 class="ingredientsTitle" style="color: indianred"></h2>
+      <ul>
+        <li class="ing1"></li>
+        <li class="ing2"></li>
+        <li class="ing3"></li>
+        <li class="ing4"></li>
+        <li class="ing5"></li>
+      </ul>
+
+      <div class="instructions">
+        
       </div>
     </div>
 
@@ -39,6 +52,14 @@
       document.querySelector(".total").textContent = recipe.preparation.total;
       document.querySelector(".prep").textContent = recipe.preparation.prep;
       document.querySelector(".cooking").textContent = recipe.preparation.cook;
+
+      document.querySelector(".ingredientsTitle").textContent =
+        recipe.ingredients.title;
+      document.querySelector(".ing1").textContent = recipe.ingredients.ing1;
+      document.querySelector(".ing2").textContent = recipe.ingredients.ing2;
+      document.querySelector(".ing3").textContent = recipe.ingredients.ing3;
+      document.querySelector(".ing4").textContent = recipe.ingredients.ing2;
+      document.querySelector(".ing5").textContent = recipe.ingredients.ing3;
     </script>
   </body>
 </html>

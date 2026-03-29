@@ -33,6 +33,7 @@ span {
 
 h1,
 h2,
+h3,
 ul {
   margin: 0;
 }
@@ -51,4 +52,8 @@ img {
 
 li {
   margin-top: 16px;
+}
+
+.instructions {
+  border-top: 2px solid var(--stone-150);
 }
