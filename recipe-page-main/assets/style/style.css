@@ -57,3 +57,7 @@ li {
 .instructions {
   border-top: 2px solid var(--stone-150);
 }
+
+.instructionsTitle {
+  margin-top: 20px;
+}

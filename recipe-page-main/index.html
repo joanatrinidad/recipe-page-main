@@ -39,7 +39,15 @@
       </ul>
 
       <div class="instructions">
-        
+        <h2 class="instructionsTitle" style="color: indianred"></h2>
+        <ol>
+          <li class="ins1"></li>
+          <li class="ins2"></li>
+          <li class="ins3"></li>
+          <li class="ins4"></li>
+          <li class="ins5"></li>
+          <li class="ins6"></li>
+        </ol>
       </div>
     </div>
 
@@ -60,6 +68,39 @@
       document.querySelector(".ing3").textContent = recipe.ingredients.ing3;
       document.querySelector(".ing4").textContent = recipe.ingredients.ing2;
       document.querySelector(".ing5").textContent = recipe.ingredients.ing3;
+
+      document.querySelector(".instructionsTitle").textContent =
+        recipe.instructions.title;
+
+      const { label1, body1 } = recipe.instructions.ins1;
+      document.querySelector(
+        ".ins1",
+      ).innerHTML = `<strong>${label1}:</strong> ${body1}`;
+
+      const { label2, body2 } = recipe.instructions.ins2;
+      document.querySelector(
+        ".ins2",
+      ).innerHTML = `<strong>${label2}:</strong> ${body2}`;
+
+      const { label3, body3 } = recipe.instructions.ins3;
+      document.querySelector(
+        ".ins3",
+      ).innerHTML = `<strong>${label3}:</strong> ${body3}`;
+
+      const { label4, body4 } = recipe.instructions.ins4;
+      document.querySelector(
+        ".ins4",
+      ).innerHTML = `<strong>${label4}:</strong> ${body4}`;
+
+      const { label5, body5 } = recipe.instructions.ins5;
+      document.querySelector(
+        ".ins5",
+      ).innerHTML = `<strong>${label5}:</strong> ${body5}`;
+
+      const { label6, body6 } = recipe.instructions.ins6;
+      document.querySelector(
+        ".ins6",
+      ).innerHTML = `<strong>${label6}:</strong> ${body6}`;
     </script>
   </body>
 </html>

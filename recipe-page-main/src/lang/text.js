@@ -20,12 +20,35 @@ export const recipe = {
   },
   instructions: {
     title: "Instructions",
-    ins1: "Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
-    ins2: "Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.",
-    ins3: "Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
-    ins4: "Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
-    ins5: "Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
-    ins6: "Enjoy: Serve hot, with additional salt and pepper if needed.",
+    ins1: {
+      label1: "Beat the eggs: ",
+      body1:
+        "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+    },
+    ins2: {
+      label2: "Heat the pan: ",
+      body2:
+        "Place a non-stick frying pan over medium heat and add butter or oil.",
+    },
+    ins3: {
+      label3: "Cook the omelette: ",
+      body3:
+        "Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+    },
+    ins4: {
+      label4: "Add fillings (optional): ",
+      body4:
+        "When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+    },
+    ins5: {
+      label5: "Fold and serve: ",
+      body5:
+        "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+    },
+    ins6: {
+      label6: "Enjoy: ",
+      body6: "Serve hot, with additional salt and pepper if needed.",
+    },
   },
   nutrition: {
     title: "Nutrition",
