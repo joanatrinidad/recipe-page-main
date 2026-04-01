@@ -49,6 +49,11 @@
           <li class="ins6"></li>
         </ol>
       </div>
+
+      <div class="nutrition">
+        <h2 class="nutritionTitle"></h2>
+        <span class="nutritionSub"></span>
+      </div>
     </div>
 
     <script type="module">
@@ -101,6 +106,12 @@
       document.querySelector(
         ".ins6",
       ).innerHTML = `<strong>${label6}:</strong> ${body6}`;
+
+      document.querySelector(".nutritionTitle").textContent =
+        recipe.nutrition.title;
+
+      document.querySelector(".nutritionSub").textContent =
+        recipe.nutrition.subtitle;
     </script>
   </body>
 </html>

@@ -61,3 +61,21 @@ li {
 .instructionsTitle {
   margin-top: 20px;
 }
+
+ol li::marker {
+  color: indianred;
+  font-weight: 500;
+}
+
+.nutrition {
+  border-top: 2px solid var(--stone-150);
+}
+
+.nutritionTitle {
+  margin-top: 20px;
+}
+
+.nutritionSub {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
