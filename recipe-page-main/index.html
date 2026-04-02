@@ -50,9 +50,30 @@
         </ol>
       </div>
 
-      <div class="nutrition">
+      <div class="nutritionCard">
         <h2 class="nutritionTitle"></h2>
         <span class="nutritionSub"></span>
+        <div class="nutritionContainers">
+          <div class="nutritionRow1">
+            <span class="nutritionCal"></span>
+            <span class="totalCal"></span>
+          </div>
+
+          <div class="nutritionRow2">
+            <span class="nutritionCarbs"></span>
+            <span class="totalCarbs"></span>
+          </div>
+
+          <div class="nutritionRow3">
+            <span class="nutritionProtein"></span>
+            <span class="totalProtein"></span>
+          </div>
+
+          <div class="nutritionRow4">
+            <span class="nutritionFat"></span>
+            <span class="totalFat"></span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -112,6 +133,30 @@
 
       document.querySelector(".nutritionSub").textContent =
         recipe.nutrition.subtitle;
+
+      document.querySelector(".nutritionCal").textContent =
+        recipe.nutrition.cal;
+
+      document.querySelector(".totalCal").textContent =
+        recipe.nutrition.totalCal;
+
+      document.querySelector(".nutritionCarbs").textContent =
+        recipe.nutrition.carbs;
+
+      document.querySelector(".totalCarbs").textContent =
+        recipe.nutrition.totalCarbs;
+
+      document.querySelector(".nutritionProtein").textContent =
+        recipe.nutrition.protein;
+
+      document.querySelector(".totalProtein").textContent =
+        recipe.nutrition.totalProtein;
+
+      document.querySelector(".nutritionFat").textContent =
+        recipe.nutrition.fat;
+
+      document.querySelector(".totalFat").textContent =
+        recipe.nutrition.totalFat;
     </script>
   </body>
 </html>

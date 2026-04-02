@@ -67,15 +67,41 @@ ol li::marker {
   font-weight: 500;
 }
 
-.nutrition {
+.nutritionCard {
   border-top: 2px solid var(--stone-150);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .nutritionTitle {
   margin-top: 20px;
 }
 
-.nutritionSub {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.nutritionRow1,
+.nutritionRow2,
+.nutritionRow3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  border-bottom: 2px solid var(--stone-150);
+  max-width: 540px;
+}
+
+.nutritionRow4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  max-width: 540px;
+}
+
+.totalCal,
+.totalCarbs,
+.totalCarbs,
+.totalProtein,
+.totalFat {
+  color: indianred;
+  font-weight: 500;
 }

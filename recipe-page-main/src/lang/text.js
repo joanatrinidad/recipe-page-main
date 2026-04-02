@@ -55,7 +55,7 @@ export const recipe = {
     subtitle:
       "The table below shows nutritional values per serving without the additional fillings.",
     cal: "Calories",
-    totalCal: "277kcal.",
+    totalCal: "277kcal",
     carbs: "Carbs",
     totalCarbs: "0g",
     protein: "Protein",
