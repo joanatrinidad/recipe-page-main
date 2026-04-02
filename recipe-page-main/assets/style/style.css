@@ -40,8 +40,9 @@ ul {
 
 img {
   height: 300px;
-  width: full;
+  width: 100%;
   border-radius: 16px;
+  object-fit: cover;
 }
 
 .preparationTime {
@@ -78,23 +79,35 @@ ol li::marker {
   margin-top: 20px;
 }
 
+.nutritionContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 540px;
+}
+
 .nutritionRow1,
 .nutritionRow2,
 .nutritionRow3 {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 14px 20px;
   border-bottom: 2px solid var(--stone-150);
-  max-width: 540px;
+  /* max-width: 540px; */
 }
 
 .nutritionRow4 {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 14px 20px;
-  max-width: 540px;
+}
+
+.nutritionCal,
+.nutritionCarbs,
+.nutritionProtein,
+.nutritionFat {
+  width: 250px;
 }
 
 .totalCal,
